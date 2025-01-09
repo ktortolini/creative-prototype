@@ -1,0 +1,21 @@
+# temp directory
+/.temp/
+
+# fresh directory
+_fresh/
+
+# vscode settings
+/.vscode/
+
+# fresh public directory
+/.public/
+
+# npm dependencies
+/node_modules/
+
+# dotenv files
+.env
+.env.local
+.env.test.local
+.env.production.local
+.env.development.local
