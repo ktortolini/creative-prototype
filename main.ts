@@ -1,8 +1,14 @@
-export function add(a: number, b: number): number {
-  return a + b;
-}
+import express from '@express';
 
-// Learn more at https://docs.deno.com/runtime/manual/examples/module_metadata#concepts
-if (import.meta.main) {
-  console.log("Add 2 + 3 =", add(2, 3));
-}
+const app: express.Application = express();
+const port: number = 8000;
+
+app.use(express.static('public'));
+
+app.get('/', (_: express.Request, res: express.Response) => {
+	res.sendFile('index.html');
+});
+
+app.listen(port, () => {
+	console.log(`Example app listening on port ${port}`);
+});
