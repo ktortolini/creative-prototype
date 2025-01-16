@@ -1,8 +1,32 @@
 {
-  "tasks": {
-    "dev": "deno run --watch main.ts"
-  },
-  "imports": {
-    "@std/assert": "jsr:@std/assert@1"
-  }
+	"compilerOptions": {
+		"strict": true
+	},
+	"lint": {
+		"rules": {
+			"tags": [
+				"recommended"
+			]
+		}
+	},
+	"fmt": {
+		"useTabs": true,
+		"lineWidth": 80,
+		"indentWidth": 4,
+		"semiColons": true,
+		"singleQuote": true,
+		"proseWrap": "preserve"
+	},
+	"lock": {
+		"frozen": false
+	},
+	"nodeModules": "none",
+	"tasks": {
+		"start": "deno run --allow-read --allow-env --allow-net main.ts",
+		"dev": "deno run --watch -A main.ts"
+	},
+	"imports": {
+		"@express": "npm:express@4.21.2",
+		"@std/assert": "jsr:@std/assert@1.0.10"
+	}
 }
