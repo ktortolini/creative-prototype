@@ -1,3 +1,6 @@
+# --
+*.lock
+
 # temp directory
 /.temp/
 
