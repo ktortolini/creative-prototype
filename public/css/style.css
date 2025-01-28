@@ -12,11 +12,31 @@ body {
   background-color: blue;
 }
 
-button {
+/* button {
   background-color: teal;
   color: white;
+} */
+
+.area {
+  min-height: 750px;
 }
 
-div {
-  border: 1px solid red;
+.spacer {
+  min-height: 75px;
+}
+
+.noto-sans-300 {
+  font-family: "Noto Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 300;
+}
+
+.noto-sans-700 {
+  font-family: "Noto Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 700;
 }
