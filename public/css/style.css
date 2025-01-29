@@ -1,21 +1,16 @@
-html {
-  box-sizing: border-box;
-}
-
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
 
+html {
+  box-sizing: border-box;
+}
+
 body {
   background-color: blue;
 }
-
-/* button {
-  background-color: teal;
-  color: white;
-} */
 
 .area {
   min-height: 750px;
@@ -26,17 +21,17 @@ body {
 }
 
 .noto-sans-300 {
-  font-family: "Noto Sans", serif;
-  font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+  font-optical-sizing: auto;
+  font-family: "Noto Sans", serif;
   font-variation-settings: "wdth" 300;
 }
 
 .noto-sans-700 {
-  font-family: "Noto Sans", serif;
-  font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  font-optical-sizing: auto;
+  font-family: "Noto Sans", serif;
   font-variation-settings: "wdth" 700;
 }
