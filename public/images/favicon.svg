@@ -1,1 +1,54 @@
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' x='-.15em' font-size='90'>🚀</text></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50"
+   shape-rendering="geometricPrecision" image-rendering="optimizeQuality">
+   <defs>
+      <style>
+         .cls-1 {
+            fill: url(#linear-gradient-3);
+            opacity: .75;
+         }
+
+         .cls-2 {
+            fill: url(#linear-gradient);
+            opacity: .25;
+         }
+
+         .cls-3 {
+            fill: url(#linear-gradient-2);
+            opacity: .5;
+         }
+
+         .cls-4 {
+            fill: url(#linear-gradient-4);
+         }
+      </style>
+      <linearGradient id="linear-gradient" x1="0" y1="43.75" x2="50" y2="43.75" gradientUnits="userSpaceOnUse">
+         <stop offset="0" stop-color="#9cc" />
+         <stop offset="1" stop-color="#9cc" />
+      </linearGradient>
+      <linearGradient id="linear-gradient-2" x1="0" y1="31.25" x2="50" y2="31.25" gradientUnits="userSpaceOnUse">
+         <stop offset="0" stop-color="#9cc" />
+         <stop offset="1" stop-color="#9cc" />
+      </linearGradient>
+      <linearGradient id="linear-gradient-3" x1="0" y1="18.75" x2="50" y2="18.75" gradientUnits="userSpaceOnUse">
+         <stop offset="0" stop-color="#9cc" />
+         <stop offset="1" stop-color="#9cc" />
+      </linearGradient>
+      <linearGradient id="linear-gradient-4" x1="0" y1="6.25" x2="50" y2="6.25" gradientUnits="userSpaceOnUse">
+         <stop offset="0" stop-color="#9cc" />
+         <stop offset="1" stop-color="#9cc" />
+      </linearGradient>
+   </defs>
+   <g id="Green">
+      <rect class="cls-2" y="37.5" width="50" height="12.5" />
+   </g>
+   <g id="Cyan">
+      <rect class="cls-3" y="25" width="50" height="12.5" />
+   </g>
+   <g id="Black">
+      <rect class="cls-1" y="12.5" width="50" height="12.5" />
+   </g>
+   <g id="Red">
+      <rect class="cls-4" width="50" height="12.5" />
+   </g>
+</svg>
