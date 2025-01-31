@@ -16,10 +16,10 @@ app.post('/mail', async (req: express.Request, res: express.Response) => {
 	await utils
 		.sendMessage(req.body.sub, req.body.txt)
 		.then(() => {
-			res.send({ result: '🎉 ' + green('success') });
+			res.send({ result: '🎉 success!' });
 		})
 		.catch((_: Error) => {
-			res.send({ result: '🧯 ' + red(_.message) });
+			res.send({ result: '🧯 ' + _.message });
 		});
 });
 
