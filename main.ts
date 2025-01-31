@@ -1,6 +1,6 @@
 import express from '@express';
 import * as utils from './utils/utils.ts';
-import { blue, green, red } from '@std/fmt/colors';
+import { blue, green } from '@std/fmt/colors';
 
 const app: express.Application = express();
 const port: number = 8000;
