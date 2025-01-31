@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/fgx8bim.css");
+
 *,
 *:before,
 *:after {
@@ -9,29 +11,52 @@ html {
 }
 
 body {
-  background-color: blue;
+  background-color: white;
 }
 
-.area {
-  min-height: 750px;
+.hero-section {
+  background-image: url("/images/backdrop.svg");
+
+  /**/
+
+  min-height: 105vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.spacer {
-  min-height: 75px;
+.main-section {
+  background-image: url("/images/backdrop-alt.svg");
+
+  /**/
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.noto-sans-300 {
-  font-weight: 300;
-  font-style: normal;
-  font-optical-sizing: auto;
-  font-family: "Noto Sans", serif;
-  font-variation-settings: "wdth" 300;
+.font-standard {
+  font-family: "halcom-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wght" 300;
 }
 
-.noto-sans-700 {
-  font-weight: 700;
-  font-style: normal;
-  font-optical-sizing: auto;
-  font-family: "Noto Sans", serif;
-  font-variation-settings: "wdth" 700;
+.font-italic {
+  font-family: "halcom-variable", sans-serif;
+  font-variation-settings: "ital" 1, "wght" 250;
+}
+
+.font-thin {
+  font-family: "halcom-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wght" 200;
+}
+
+.font-strong {
+  font-family: "halcom-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wght" 500;
+}
+
+.font-shadow {
+  text-shadow: 2.5px 3.5px 4.5px rgba(0, 0, 0, 0.1);
 }
