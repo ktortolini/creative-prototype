@@ -13,6 +13,9 @@ _fresh/
 # fresh public directory
 /.public/
 
+# htmlhint files
+.htmlhintrc
+
 # npm dependencies
 /node_modules/
 
