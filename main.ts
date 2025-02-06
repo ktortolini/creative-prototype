@@ -6,10 +6,24 @@ const app: express.Application = express();
 const port: number = 8000;
 
 app.use(express.json());
+app.set('views', './views');
+app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 app.get('/', (_: express.Request, res: express.Response) => {
-	res.sendFile('index.html');
+	res.render('index.ejs');
+});
+
+app.get('/project', (_: express.Request, res: express.Response) => {
+	res.render('project.ejs');
+});
+
+app.get('/projects', (_: express.Request, res: express.Response) => {
+	res.render('projects.ejs');
+});
+
+app.get('/contact', (_: express.Request, res: express.Response) => {
+	res.render('contact.ejs');
 });
 
 app.post('/mail', async (req: express.Request, res: express.Response) => {
