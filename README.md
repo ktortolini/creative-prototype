@@ -1,10 +1,10 @@
-![Deno](https://img.shields.io/badge/deno-d0bcd1?style=for-the-badge&logo=deno&logoColor=black)
-![JavaScript](https://img.shields.io/badge/javascript-%23d0bcd1.svg?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/typescript-%23d0bcd1.svg?style=for-the-badge&logo=typescript&logoColor=black)
+![Deno](https://img.shields.io/badge/deno-000000?style=for-the-badge&logo=deno&logoColor=ffffff)
+![JavaScript](https://img.shields.io/badge/javascript-%23000000.svg?style=for-the-badge&logo=javascript&logoColor=ffffff)
+![TypeScript](https://img.shields.io/badge/typescript-%23000000.svg?style=for-the-badge&logo=typescript&logoColor=ffffff)
 
-![GitHub](https://img.shields.io/github/license/ktortolini/creative-prototype?style=flat-square)
-![GitHub language count](https://img.shields.io/github/languages/count/ktortolini/creative-prototype?style=flat-square)
-![GitHub top language](https://img.shields.io/github/languages/top/ktortolini/creative-prototype?color=green&style=flat-square)
+![GitHub](https://img.shields.io/github/license/ktortolini/creative-prototype?style=flat-square&color=000000&labelColor=808080)
+![GitHub language count](https://img.shields.io/github/languages/count/ktortolini/creative-prototype?style=flat-square&color=000000&labelColor=808080)
+![GitHub top language](https://img.shields.io/github/languages/top/ktortolini/creative-prototype?style=flat-square&color=000000&labelColor=808080)
 
 # Creative Prototype
 
