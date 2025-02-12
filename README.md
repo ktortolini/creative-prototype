@@ -2,9 +2,9 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23000000.svg?style=for-the-badge&logo=javascript&logoColor=ffffff)
 ![TypeScript](https://img.shields.io/badge/typescript-%23000000.svg?style=for-the-badge&logo=typescript&logoColor=ffffff)
 
-![GitHub](https://img.shields.io/github/license/ktortolini/creative-prototype?style=flat-square&color=000000&labelColor=808080)
-![GitHub language count](https://img.shields.io/github/languages/count/ktortolini/creative-prototype?style=flat-square&color=000000&labelColor=808080)
-![GitHub top language](https://img.shields.io/github/languages/top/ktortolini/creative-prototype?style=flat-square&color=000000&labelColor=808080)
+![GitHub](https://img.shields.io/github/license/ktortolini/creative-prototype?style=flat-square&color=000&labelColor=346db6)
+![GitHub language count](https://img.shields.io/github/languages/count/ktortolini/creative-prototype?style=flat-square&color=000&labelColor=346db6)
+![GitHub top language](https://img.shields.io/github/languages/top/ktortolini/creative-prototype?style=flat-square&color=000&labelColor=346db6)
 
 # Creative Prototype
 
