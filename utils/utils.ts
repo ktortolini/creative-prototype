@@ -1,6 +1,8 @@
 import nodemailer from '@nodemailer';
 import '@std/dotenv/load'; /* auto-load */
 
+const __password = atob(Deno.env.get('MAIL_PASSWORD') || '');
+
 export async function sendMessage(sub: string, txt: string) {
 	const transporter = nodemailer.createTransport({
 		host: Deno.env.get('MAIL_HOST'),
@@ -8,7 +10,7 @@ export async function sendMessage(sub: string, txt: string) {
 		secure: Deno.env.get('MAIL_SECURE'),
 		auth: {
 			user: Deno.env.get('MAIL_USERNAME'),
-			pass: Deno.env.get('MAIL_PASSWORD'),
+			pass: __password,
 		},
 		requireTLS: Deno.env.get('MAIL_TLS'),
 	});
