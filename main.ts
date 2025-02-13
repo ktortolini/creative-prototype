@@ -1,6 +1,10 @@
 import express from '@express';
 import * as utils from './utils/utils.ts';
+import * as db from './utils/database.ts';
 import { blue, green } from '@std/fmt/colors';
+
+// deno-lint-ignore no-explicit-any
+let projects: any[] = [];
 
 const app: express.Application = express();
 const port: number = 8000;
@@ -10,12 +14,21 @@ app.set('views', './views');
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
-app.get('/', (_: express.Request, res: express.Response) => {
-	res.render('index.ejs');
+// deno-fmt-ignore
+app.get('/', async (_: express.Request, res: express.Response, next: express.NextFunction) => {
+	await db.connect()
+		.then(async () => {
+			projects = await db.getAllProjects();
+			const featuredRand = Math.floor(Math.random() * projects.length);
+			res.render('index.ejs', {
+				featuredProject: projects[featuredRand],
+			});
+		})
+		.catch(next);
 });
 
 app.get('/project', (_: express.Request, res: express.Response) => {
-	res.render('project.ejs');
+	res.render('project.ejs', { projectArray: projects });
 });
 
 app.get('/projects', (_: express.Request, res: express.Response) => {
