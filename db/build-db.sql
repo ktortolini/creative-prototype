@@ -22,7 +22,7 @@ active
 )
 VALUES (
 "Project 1",
-"./public/images/satellite.jpg",
+"./images/satellite.jpg",
 "This is a short description of the first project. It is a really good
 project. It is made by a really good artist. It is really good work. It has good
 code. It has good visuals. And it has heart and soul.",
@@ -34,7 +34,7 @@ code. It has good visuals. And it has heart and soul.",
 ),
 (
 "Project 2",
-"./public/images/diffReact.png",
+"./images/diffReact.png",
 "This is a short description of the second project. It is a really good
 project. It is made by a really good artist. It is really good work. It has good
 code. It has good visuals. And it has heart and soul.",
@@ -46,7 +46,7 @@ code. It has good visuals. And it has heart and soul.",
 ),
 (
 "Project 3",
-"./public/images/purpleOrangeWidget.png",
+"./images/purpleOrangeWidget.png",
 "This is a short description of the third project. It is a really good
 project. It is made by a really good artist. It is really good work. It has good
 code. It has good visuals. And it has heart and soul.",
