@@ -31,7 +31,21 @@
 
    <!-- main section -->
    <section class="main-section position-relative flex-grow-1">
-      <!-- todo: add projects here -->
+      <div class="position-relative w-100">
+         <div class="container">
+            <div class="pt-5 mt-5"></div>
+            <div class="row">
+               <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-4 g-3 text-center justify-content-center">
+                  <% projectArray.forEach((item, index)=> {%>
+                     <div class="col-10">
+                        <%- include('./partials/cta.ejs', {image: item.img_url, name: item.project_name, ident:
+                           item.id}); %>
+                     </div>
+                     <% }); %>
+               </div>
+            </div>
+         </div>
+      </div>
    </section>
 
    <!-- footer partial here -->
