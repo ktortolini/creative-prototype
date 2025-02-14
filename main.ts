@@ -32,7 +32,7 @@ app.get('/project', (_: express.Request, res: express.Response) => {
 });
 
 app.get('/projects', (_: express.Request, res: express.Response) => {
-	res.render('projects.ejs');
+	res.render('projects.ejs', { projectArray: projects });
 });
 
 app.get('/contact', (_: express.Request, res: express.Response) => {
