@@ -24,7 +24,10 @@ app.get('/', async (_: express.Request, res: express.Response, next: express.Nex
 				featuredProject: projects[featuredRand],
 			});
 		})
-		.catch(next);
+		.catch((_: Error) => {
+			console.error(_.message);
+			next(_ as Error);
+		});
 });
 
 app.get('/project', (_: express.Request, res: express.Response) => {
