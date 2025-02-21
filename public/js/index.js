@@ -1,11 +1,11 @@
 (function () {
 	'use strict';
 
-	/**
-	 * Initial wallet connection
-	 */
+	// /**
+	//  * Initial wallet connection
+	//  */
 
-	connectWallet();
+	// connectWallet();
 
 	/**
 	 * Add the user address variable
