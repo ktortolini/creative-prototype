@@ -1,6 +1,9 @@
 # --
 *.lock
 
+# certs directory
+/certs/
+
 # temp directory
 /.temp/
 
