@@ -21,38 +21,38 @@ royalty_percent,
 active
 )
 VALUES (
-"Project 1",
-"./images/satellite.jpg",
-"This is a short description of the first project. It is a really good
+'Project 1',
+'https://genartnft-cdn.nyc3.cdn.digitaloceanspaces.com/examples/satellite.jpg',
+'This is a short description of the first project. It is a really good
 project. It is made by a really good artist. It is really good work. It has good
-code. It has good visuals. And it has heart and soul.",
+code. It has good visuals. And it has heart and soul.',
 25,
 1.0,
-"2024-02-01 09:00:00",
+'2024-02-01 09:00:00',
 7,
 0
 ),
 (
-"Project 2",
-"./images/diffReact.png",
-"This is a short description of the second project. It is a really good
+'Project 2',
+'https://genartnft-cdn.nyc3.cdn.digitaloceanspaces.com/examples/diffReact.png',
+'This is a short description of the second project. It is a really good
 project. It is made by a really good artist. It is really good work. It has good
-code. It has good visuals. And it has heart and soul.",
+code. It has good visuals. And it has heart and soul.',
 64,
 1.5,
-"2023-12-15 07:30:00",
+'2023-12-15 07:30:00',
 5,
 0
 ),
 (
-"Project 3",
-"./images/purpleOrangeWidget.png",
-"This is a short description of the third project. It is a really good
+'Project 3',
+'https://genartnft-cdn.nyc3.cdn.digitaloceanspaces.com/examples/purpleOrangeWidget.png',
+'This is a short description of the third project. It is a really good
 project. It is made by a really good artist. It is really good work. It has good
-code. It has good visuals. And it has heart and soul.",
+code. It has good visuals. And it has heart and soul.',
 512,
 2.0,
-"2024-03-19 05:00:00",
+'2024-03-19 05:00:00',
 2,
 0
 );
