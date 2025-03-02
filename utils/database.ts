@@ -7,7 +7,7 @@ const __password = atob(Deno.env.get('MYSQL_PASSWORD') || '');
 
 export function connect(): Promise<mysql.Pool> {
 	// deno-fmt-ignore
-	const _cString = 
+	const cString = 
       'mysql://' +
       Deno.env.get('MYSQL_USER') +
       ':' +
@@ -19,16 +19,7 @@ export function connect(): Promise<mysql.Pool> {
 		'/' +
 		Deno.env.get('MYSQL_DATABASE');
 
-	pool = mysql.createPool({
-		/**
-		 * todo(ktortolini): changing this to 'cString' when we deploy
-		 */
-		user: Deno.env.get('MYSQL_USER'),
-		password: __password,
-		host: Deno.env.get('MYSQL_HOST'),
-		port: parseInt(Deno.env.get('MYSQL_PORT') || '3306'),
-		database: Deno.env.get('MYSQL_DATABASE'),
-	});
+	pool = mysql.createPool(cString);
 
 	return Promise.resolve(pool);
 }
