@@ -15,7 +15,7 @@ body {
 }
 
 .hero-section {
-  background-image: url("/images/backdrop.svg");
+  background-image: url("/images/backdrop.svg"); /* note: https://genartnft-cdn.nyc3.cdn.digitaloceanspaces.com/backdrop.svg */
 
   /**/
 
@@ -27,7 +27,7 @@ body {
 }
 
 .main-section {
-  background-image: url("/images/backdrop-alt.svg");
+  background-image: url("/images/backdrop-alt.svg"); /* note: https://genartnft-cdn.nyc3.cdn.digitaloceanspaces.com/backdrop-alt.svg */
 
   /**/
 
