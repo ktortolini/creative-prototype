@@ -19,7 +19,7 @@ const config = {
 	server: 'digitalocean',
 	host: Deno.env.get('DO_MYSQL_HOST'),
 	user: Deno.env.get('DO_MYSQL_USER'),
-	password: atob(Deno.env.get('DO_MYSQL_PASSWORD') || ''),
+	password: Deno.env.get('DO_MYSQL_PASSWORD') || '',
 	database: Deno.env.get('DO_MYSQL_DATABASE'),
 	port: Number(Deno.env.get('DO_MYSQL_PORT') || '25060'),
 };
