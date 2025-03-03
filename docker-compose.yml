@@ -1,0 +1,39 @@
+version: "3"
+
+services:
+  web:
+    build: .
+    container_name: creative-prototype
+    image: creative-prototype
+    ports:
+      - "8000:8000"
+    environment:
+      # Digital Ocean SQL server settings
+      - DO_MYSQL_HOST=${DO_MYSQL_HOST}
+      - DO_MYSQL_PORT=${DO_MYSQL_PORT}
+      - DO_MYSQL_USER=${DO_MYSQL_USER}
+      - DO_MYSQL_PASSWORD=${DO_MYSQL_PASSWORD}
+      - DO_MYSQL_DATABASE=${DO_MYSQL_DATABASE}
+      
+      # Local SQL server settings (included for completeness)
+      - MYSQL_HOST=${MYSQL_HOST}
+      - MYSQL_PORT=${MYSQL_PORT}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      
+      # Mailing server settings
+      - MAIL_HOST=${MAIL_HOST}
+      - MAIL_PORT=${MAIL_PORT}
+      - MAIL_SECURE=${MAIL_SECURE}
+      - MAIL_USERNAME=${MAIL_USERNAME}
+      - MAIL_PASSWORD=${MAIL_PASSWORD}
+      - MAIL_TLS=${MAIL_TLS}
+      
+      # Message configuration
+      - MESSAGE_FROM=${MESSAGE_FROM}
+      - MESSAGE_TO=${MESSAGE_TO}
+      
+      # Digital Ocean settings
+      - GENART_S3_KEY=${GENART_S3_KEY}
+      - ADMIN_TOKEN=${ADMIN_TOKEN}
