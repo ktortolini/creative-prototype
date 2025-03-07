@@ -1,18 +1,37 @@
 <div class="card shadow-sm bg-white rounded m-2 h-100">
    <div class="card-img-container">
-      <img src="<%=image %>" class="card-img-top p-0" alt="An image of the <%= name %> project">
+      <img src="<%= img_url %>" class="card-img-top p-0" alt="An image of the <%= project_name %> project">
    </div>
    <div class="card-body">
       <div class="card-title text-center">
          <h3 class="font-strong fs-4 mb-3">
-            <%= name %>
+            <%= project_name %>
          </h3>
+      </div>
+      <div class="card-text">
+         <p class="font-standard text-muted small">
+            <%= project_description.substring(0, 100) %>...
+         </p>
+         <div class="d-flex justify-content-between mt-3">
+            <span class="badge font-standard py-1 px-2 shadow-sm rounded bg-gradient bg-black bg-opacity-10 text-black">
+               <%= quantity %> items
+            </span>
+            <span class="badge font-standard py-1 px-2 shadow-sm rounded bg-gradient bg-black bg-opacity-10 text-black">
+               <%= price_eth %> ETH
+            </span>
+         </div>
+         <div class="text-center mt-2">
+            <small class="text-muted font-standard">Launch: <%= new Date(open_date_gmt).toLocaleDateString() %></small>
+         </div>
+         <div class="text-center">
+            <small class="text-muted font-standard">Royalty: <%= royalty_percent %>%</small>
+         </div>
       </div>
    </div>
    <div class="card-footer bg-transparent border-0 text-center pb-3">
-      <a href="/project/<%= ident %>"
+      <a href="/project/<%= id %>"
          class="btn font-standard py-2 px-4 shadow-sm rounded bg-gradient bg-black bg-opacity-10">
-         Exemplum Laboris
+         View Project
       </a>
    </div>
 </div>
