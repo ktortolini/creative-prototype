@@ -3,6 +3,7 @@
 <html>
 
 <head>
+   <base href="/">
    <!-- meta tags -->
    <meta charset="UTF-8">
    <meta name="author" content="Kevin Tortolini">
@@ -32,6 +33,90 @@
 
    <!-- main section -->
    <section class="main-section position-relative flex-grow-1">
+      <!-- Project data for client-side JavaScript -->
+      <div id="project-data" class="d-none">
+         <%= JSON.stringify(project) %>
+      </div>
+      <div id="project-id" class="d-none">
+         <%= which %>
+      </div>
+
+      <div class="row text-center justify-content-center">
+         <div class="col-10 mb-5">
+            <div class="row justify-content-center">
+               <div class="col-12 col-md-4 mt-4">
+                  <div class="card shadow-sm bg-white rounded m-2">
+                     <img src=<%=`${project.img_url}` %> class="card-img-top" alt="Image of <%= project.project_name %>"
+                        />
+                        <div>
+                           <div class="card-title">
+                              <p class="h3 m-2 font-strong">
+                                 <strong>
+                                    <%= project.project_name %>
+                                 </strong>
+                              </p>
+                           </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 text-center pb-3">
+                           <a id="mint-button"
+                              class="btn font-standard py-2 px-4 shadow-sm rounded bg-gradient bg-black bg-opacity-10">Mint</a>
+                        </div>
+                  </div>
+               </div>
+               <div class="col-10 col-md-6 mt-2 text-start">
+                  <div class="mb-3">
+                     <h3 class="font-strong fs-4">Project name</h3>
+                     <p class="font-standard">
+                        <%= project.project_name %>
+                     </p>
+                  </div>
+                  <div class="mb-3">
+                     <h3 class="font-strong fs-4">Project description</h3>
+                     <p class="font-standard">
+                        <%= project.project_description %>
+                     </p>
+                  </div>
+                  <div class="row mb-3">
+                     <div class="col-6">
+                        <h3 class="font-strong fs-4">Price</h3>
+                        <p class="font-standard">
+                           <%= project.price_eth %> ETH
+                        </p>
+                     </div>
+                     <div class="col-6">
+                        <h3 class="font-strong fs-4">Quantity</h3>
+                        <p class="font-standard">
+                           <%= project.quantity %>
+                        </p>
+                     </div>
+                  </div>
+                  <div class="mb-3">
+                     <h3 class="font-strong fs-4">Opening date</h3>
+                     <p class="font-standard">
+                        <%= new Date(project.open_date_gmt).toLocaleDateString() %>
+                     </p>
+                  </div>
+                  <div class="mb-3">
+                     <h3 class="font-strong fs-4">Royalties</h3>
+                     <p class="font-standard">The artist will get <%= project.royalty_percent %>% of secondary sales</p>
+                  </div>
+                  <div class="mb-3">
+                     <h3 class="font-strong fs-4">Status</h3>
+                     <p class="font-standard"><span id="status">Active - </span><span id="mint-quant"></span><span> of
+                           <%= project.quantity %> minted
+                        </span></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr class="m-2" />
+      </div>
+
+      <section class="justify-content-center">
+         <div class="text-center justify-content-center mt-5 mb-2">
+            <h2 class="font-strong">Mints from this project</h2>
+         </div>
+      </section>
       <!-- todo: add projects here -->
    </section>
 
