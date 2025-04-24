@@ -40,19 +40,19 @@
       <div class="position-relative w-100">
          <div class="container">
             <div class="pt-5 mt-5"></div>
-            <h2 class="p-1 text-center font-strong mb-4">Available Projects</h2>
-            <div class="row">
-               <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-4 g-3 text-center justify-content-center">
-                  <% projectArray.forEach((item, index)=> {%>
-                     <div class="col-10">
-                        <%- include('./partials/cta.ejs', { img_url: item.img_url, project_name: item.project_name, id:
-                           item.id, project_description: item.project_description, quantity: item.quantity, price_eth:
-                           item.price_eth, open_date_gmt: item.open_date_gmt, royalty_percent: item.royalty_percent });
-                           %>
-                     </div>
-                     <% }); %>
+            <%- include('./partials/space.ejs', { id: 'available-projects' , title: 'Available Projects' }) %>
+               <div class="row">
+                  <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-4 g-3 text-center justify-content-center">
+                     <% projectArray.forEach((item, index)=> {%>
+                        <div class="col-10">
+                           <%- include('./partials/cta.ejs', { img_url: item.img_url, project_name: item.project_name,
+                              id: item.id, project_description: item.project_description, quantity: item.quantity,
+                              price_eth: item.price_eth, open_date_gmt: item.open_date_gmt, royalty_percent:
+                              item.royalty_percent }); %>
+                        </div>
+                        <% }); %>
+                  </div>
                </div>
-            </div>
          </div>
       </div>
    </section>

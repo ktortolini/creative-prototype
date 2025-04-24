@@ -56,91 +56,91 @@
          <div class="container">
             <div class="pt-4"></div>
             <!-- featured project -->
-            <h2 id="featured-project" class="p-1 text-center font-strong">Featured Project</h2>
-            <div class="row">
-               <!-- project preview -->
-               <div class="col-md-6">
-                  <div class="m-3">
-                     <img src="./images/favicon.svg" alt="Personal NFT Mint Logo" class="img-fluid">
-                     <!-- note: https://genartnft-cdn.nyc3.cdn.digitaloceanspaces.com/favicon.svg -->
-                  </div>
-               </div>
-
-               <!-- project details -->
-               <div class="col-md-6">
-                  <div class="m-3">
-                     <div class="mb-3">
-                        <h3 class="font-strong fs-4">Project Name</h3>
-                        <p class="font-standard">Lorem ipsum dolor sit amet</p>
-                     </div>
-                     <div class="mb-3">
-                        <h4 class="font-strong fs-4">Description</h4>
-                        <p class="font-standard">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                           eiusmod
-                           tempor incididunt ut labore et dolore magna aliqua.</p>
-                     </div>
-                     <div class="mb-3">
-                        <h4 class="font-strong fs-4">Price</h4>
-                        <p class="font-standard">0.05 ETH</p>
-                     </div>
-                     <div class="mb-3">
-                        <h4 class="font-strong fs-4">Release</h4>
-                        <p class="font-standard">March 29, 2025</p>
-                     </div>
-                     <!-- featured project buttons -->
-                     <div class="d-grid gap-2 d-md-flex">
-                        <a href="/project"
-                           class="btn font-standard py-3 px-5 shadow-sm rounded fs-6 bg-gradient bg-black bg-opacity-10">Exemplum
-                           Laboris</a>
-                        <a href="/projects"
-                           class="btn font-standard py-3 px-5 shadow-sm rounded fs-6 bg-gradient bg-black bg-opacity-10">Exemplum
-                           Laboris</a>
+            <%- include('./partials/space.ejs', { id: 'featured-project' , title: 'Featured Project' }) %>
+               <div class="row">
+                  <!-- project preview -->
+                  <div class="col-md-6">
+                     <div class="m-3">
+                        <img src="./images/favicon.svg" alt="Personal NFT Mint Logo" class="img-fluid">
+                        <!-- note: https://genartnft-cdn.nyc3.cdn.digitaloceanspaces.com/favicon.svg -->
                      </div>
                   </div>
-               </div>
-            </div>
 
-            <div class="pt-4"></div>
-            <!-- about artist -->
-            <h2 id="about-artist" class="p-1 text-center font-strong">About Artist</h2>
-            <div class="row">
-               <!-- artist details -->
-               <div class="col-md-6">
-                  <div class="m-3">
-                     <div class="mb-3">
-                        <h3 class="font-strong fs-4">Artist Name</h3>
-                        <p class="font-standard">Kevin Tortolini</p>
-                     </div>
-                     <div class="mb-3">
-                        <h4 class="font-strong fs-4">Bio</h4>
-                        <p class="font-standard">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                           eiusmod
-                           tempor incididunt ut labore et dolore magna aliqua.</p>
-                     </div>
-                     <div class="mb-3">
-                        <h4 class="font-strong fs-4">Location</h4>
-                        <p class="font-standard">Dallas, TX</p>
-                     </div>
-                     <!-- artist links -->
-                     <div class="d-grid gap-2 d-md-flex">
-                        <a href="/contact"
-                           class="btn font-standard py-3 px-5 shadow-sm rounded fs-6 bg-gradient bg-black bg-opacity-10">Contact
-                           Artist</a>
-                        <a href="https://ktortolini.dev"
-                           class="btn font-standard py-3 px-5 shadow-sm rounded fs-6 bg-gradient bg-black bg-opacity-10">View
-                           Portfolio</a>
+                  <!-- project details -->
+                  <div class="col-md-6">
+                     <div class="m-3">
+                        <div class="mb-3">
+                           <h3 class="font-strong fs-4">Project Name</h3>
+                           <p class="font-standard">Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="mb-3">
+                           <h4 class="font-strong fs-4">Description</h4>
+                           <p class="font-standard">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                              eiusmod
+                              tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="mb-3">
+                           <h4 class="font-strong fs-4">Price</h4>
+                           <p class="font-standard">0.05 ETH</p>
+                        </div>
+                        <div class="mb-3">
+                           <h4 class="font-strong fs-4">Release</h4>
+                           <p class="font-standard">March 29, 2025</p>
+                        </div>
+                        <!-- featured project buttons -->
+                        <div class="d-grid gap-2 d-md-flex">
+                           <a href="/project"
+                              class="btn font-standard py-3 px-5 shadow-sm rounded fs-6 bg-gradient bg-black bg-opacity-10">Exemplum
+                              Laboris</a>
+                           <a href="/projects"
+                              class="btn font-standard py-3 px-5 shadow-sm rounded fs-6 bg-gradient bg-black bg-opacity-10">Exemplum
+                              Laboris</a>
+                        </div>
                      </div>
                   </div>
                </div>
 
-               <!-- artist image -->
-               <div class="col-md-6">
-                  <div class="m-3">
-                     <img src="./images/favicon.svg" alt="Artist Profile" class="img-fluid">
-                     <!-- note: https://genartnft-cdn.nyc3.cdn.digitaloceanspaces.com/favicon.svg -->
+               <div class="pt-4"></div>
+               <!-- about artist -->
+               <%- include('./partials/space.ejs', { id: 'about-artist' , title: 'About Artist' }) %>
+                  <div class="row">
+                     <!-- artist details -->
+                     <div class="col-md-6">
+                        <div class="m-3">
+                           <div class="mb-3">
+                              <h3 class="font-strong fs-4">Artist Name</h3>
+                              <p class="font-standard">Kevin Tortolini</p>
+                           </div>
+                           <div class="mb-3">
+                              <h4 class="font-strong fs-4">Bio</h4>
+                              <p class="font-standard">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                                 eiusmod
+                                 tempor incididunt ut labore et dolore magna aliqua.</p>
+                           </div>
+                           <div class="mb-3">
+                              <h4 class="font-strong fs-4">Location</h4>
+                              <p class="font-standard">Dallas, TX</p>
+                           </div>
+                           <!-- artist links -->
+                           <div class="d-grid gap-2 d-md-flex">
+                              <a href="/contact"
+                                 class="btn font-standard py-3 px-5 shadow-sm rounded fs-6 bg-gradient bg-black bg-opacity-10">Contact
+                                 Artist</a>
+                              <a href="https://ktortolini.dev"
+                                 class="btn font-standard py-3 px-5 shadow-sm rounded fs-6 bg-gradient bg-black bg-opacity-10">View
+                                 Portfolio</a>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- artist image -->
+                     <div class="col-md-6">
+                        <div class="m-3">
+                           <img src="./images/favicon.svg" alt="Artist Profile" class="img-fluid">
+                           <!-- note: https://genartnft-cdn.nyc3.cdn.digitaloceanspaces.com/favicon.svg -->
+                        </div>
+                     </div>
                   </div>
-               </div>
-            </div>
          </div>
       </div>
    </section>

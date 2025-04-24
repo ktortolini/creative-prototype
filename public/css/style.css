@@ -37,6 +37,32 @@ body {
   background-attachment: fixed;
 }
 
+.anchor-spacer {
+  padding-top: 20px;
+  margin-top: -20px;
+}
+
+.section-title {
+  position: relative;
+  will-change: transform;
+  transition: transform 0.3s ease;
+}
+
+.section-title:after {
+  width: 0;
+  left: 50%;
+  content: '';
+  height: 2px;
+  bottom: -5px;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: width 0.6s ease;
+}
+
+.anchor-spacer:target .section-title:after {
+  width: 100px;
+}
+
 .font-standard {
   font-family: "halcom-variable", sans-serif;
   font-variation-settings: "ital" 0, "wght" 300;
